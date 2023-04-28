@@ -38,7 +38,7 @@ class ExperienceSection extends StatelessWidget {
                               horizontal: 15, vertical: 0)),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
-                        children: [
+                        children: const [
                           Text(
                             'Hire me',
                             style: TextStyle(fontSize: 12),
@@ -57,21 +57,22 @@ class ExperienceSection extends StatelessWidget {
         ),
         Expanded(
           child: Row(
-            children: [
+            children: const [
               ReusableCard(
                 topText: '2+',
                 bottomText: 'Yours Experience',
-                cardColor: Colors.tealAccent,
+                cardColor: GlobalColor.myCyan,
               ),
               ReusableCard(
                 topText: '54+',
+                textColor: Colors.black,
                 bottomText: 'Handled Project',
-                cardColor: Colors.redAccent,
+                cardColor: GlobalColor.myYellow,
               ),
               ReusableCard(
                 topText: '40+',
                 bottomText: 'Clients',
-                cardColor: Colors.yellowAccent,
+                cardColor: GlobalColor.myPink,
               ),
             ],
           ),

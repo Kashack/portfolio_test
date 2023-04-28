@@ -10,4 +10,5 @@ class GlobalColor{
   static const Color myCyan = Color(0xFF00C399);
   static const Color myPurple = Color(0xFF2868B2);
   static const Color myLinkIn = Color(0xFF2868B2);
+  static const Color myIconCard = Color(0xFF262427);
 }

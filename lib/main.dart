@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'My Assignment Portfolio',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(),
+      theme: ThemeData(useMaterial3: true),
       home: HomePage(),
     );
   }

@@ -5,19 +5,21 @@ class ReusableCard extends StatelessWidget {
   final String topText;
   final String bottomText;
   final Color cardColor;
+  final Color textColor;
 
-  ReusableCard({
+  const ReusableCard({
     Key? key,
     required this.topText,
     required this.bottomText,
     required this.cardColor,
+    this.textColor = Colors.white,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 4,vertical: 8),
+        margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(10),
@@ -28,7 +30,7 @@ class ReusableCard extends StatelessWidget {
             Text(
               topText,
               style: TextStyle(
-                color: Colors.white,
+                color: textColor,
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
@@ -36,7 +38,7 @@ class ReusableCard extends StatelessWidget {
             Text(
               bottomText,
               style: TextStyle(
-                color: Colors.white,
+                color: textColor,
                 fontSize: 10,
                 fontWeight: FontWeight.bold,
               ),
